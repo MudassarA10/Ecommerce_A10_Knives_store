@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
+
+const Data = createContext();
 
 const ProductForm = () => {
   const [allproduct, setAllproduct] = useState([]);
@@ -124,7 +126,7 @@ const ProductForm = () => {
           </button>
         </div>
       </form>
-      <table className="table-auto">
+      {/* <table className="table-auto">
         <thead>
           <tr>
             <th className="px-4 py-2">Name</th>
@@ -145,7 +147,7 @@ const ProductForm = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 };
