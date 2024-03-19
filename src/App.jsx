@@ -8,12 +8,12 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <div class="flex h-screen">
-        <div class="w-1/4 h-full">
+      <div className="flex h-screen">
+        <div className="w-full md:w-1/4 h-full">
           <Sidebar />
         </div>
 
-        <div class="w-3/4 h-full bg-gray-100">
+        <div className="w-full md:w-3/4 h-full bg-gray-100">
           <Routes>
             <Route path="/" element={<WelcomeScreen />} />
             <Route path="ShowProduct" element={<ShowProduct />} />
